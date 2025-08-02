@@ -8,7 +8,7 @@ import React, { useState } from 'react';
 const styles = `
     @font-face {
       font-family: 'Bauhaus 93';
-      src: url('./assets/fonts/BAUHS93.TTF') format('truetype');
+      src: url('/fonts/BAUHS93.TTF') format('truetype');
     }
 
     h2 {
@@ -112,7 +112,7 @@ function App({ onBack }) {
       <main className="container-fluid flex-grow-1 d-flex flex-column justify-content-center align-items-center p-4">
         {/* Logo và Tiêu đề */}
         <div className="text-center mb-5 mt-5">
-          <h1 className="fw-bold text-white mb-2" style={{ fontSize: '3rem', textShadow: '2px 2px 4px #000' }}>
+          <h1 className="mb-2" style={{ fontSize: '3rem', textShadow: '2px 2px 4px #000' }}>
             <span style={{ color: '#baff00' }} className="title">Spider | Bee</span>
           </h1>
           <h2 className="text-white fs-4 fw-light mt-3">
