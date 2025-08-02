@@ -82,7 +82,7 @@ function OngIndex({ onBack }) {
         {/* Logo và Tiêu đề */}
         <div className="text-center mb-5 mt-5">
           <h1 className="fw-bold text-white mb-2" style={{ fontSize: '3rem', textShadow: '2px 2px 4px #000' }}>
-            <span style={{ color: '#baff00' }}>Spider | Bee</span>
+            <span style={{ color: '#baff00' }} className="title">Spider | Bee</span>
           </h1>
           <h2 className="text-white fs-4 fw-light mt-3">
             Bạn là Ong <img src="/ong-icon.png" width='7%' alt="ong-icon" />

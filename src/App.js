@@ -5,7 +5,39 @@ import OngIndex from "./OngIndex"
 import TrinhSatIndex from "./TrinhSatIndex";
 import React, { useState } from 'react';
 
+const styles = `
+    @font-face {
+      font-family: 'Bauhaus 93';
+      src: url('./assets/fonts/BAUHS93.TTF') format('truetype');
+    }
+
+    h2 {
+      font-family: 'Montserrat';
+    }
+
+    h5 {
+      font-family: 'Montserrat';
+    }
+
+    button {
+      font-family: 'Montserrat';
+    }
+
+    .title {
+      font-family: 'Bauhaus 93' !important;
+    }
+`;
+
 function App({ onBack }) {
+  React.useEffect(() => {
+    const styleElement = document.createElement('style');
+    styleElement.innerHTML = styles;
+    document.head.appendChild(styleElement);
+    return () => {
+      document.head.removeChild(styleElement);
+    };
+  }, []);
+
   const [selectedCharacter, setSelectedCharacter] = useState(null);
 
   const handleSelectCharacter = (character) => {
@@ -35,8 +67,7 @@ function App({ onBack }) {
   const backgroundStyle = {
     background: 'linear-gradient(180deg, #5c0f59 0%, #a33256 50%, #e06c37 100%)',
     minHeight: '100vh',
-    fontFamily: 'sans-serif',
-    position: 'relative'
+    position: 'relative',
   };
 
   const buttonGradient1 = {
@@ -46,7 +77,7 @@ function App({ onBack }) {
     fontWeight: 'bold',
     borderRadius: '50px',
     boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-    transition: 'transform 0.2s'
+    transition: 'transform 0.2s',
   };
 
   const buttonGradient2 = {
@@ -82,7 +113,7 @@ function App({ onBack }) {
         {/* Logo và Tiêu đề */}
         <div className="text-center mb-5 mt-5">
           <h1 className="fw-bold text-white mb-2" style={{ fontSize: '3rem', textShadow: '2px 2px 4px #000' }}>
-            <span style={{ color: '#baff00' }}>Spider | Bee</span>
+            <span style={{ color: '#baff00' }} className="title">Spider | Bee</span>
           </h1>
           <h2 className="text-white fs-4 fw-light mt-3">
             Bạn là Nhện <img src="/nhen-icon.png" width='7%' alt="nhen-icon" />
