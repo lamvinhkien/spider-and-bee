@@ -151,34 +151,35 @@ function TrinhSatIndex({ onBack }) {
       </main >
 
       {/* Footer */}
-      < footer className="w-100 mt-auto py-3 text-white text-center" >
+      <footer className="w-100 mt-auto py-3 text-white text-center" >
         <div className="container">
           <div className="row">
+            <div className="col-4"></div>
             {/* Cột Hướng Dẫn */}
-            <div className="col-6 text-start">
-              <h5 className="text-uppercase fw-bold text-white mb-3">
+            <div className="col-4 text-start">
+              <span className="fw-bold text-white mb-2">
                 Hướng Dẫn
-              </h5>
+              </span>
               <ul className="list-unstyled">
-                <li className="mb-2"><a href="#!" className="text-white text-decoration-none">Giới thiệu</a></li>
-                <li className="mb-2"><a href="#!" className="text-white text-decoration-none">Trợ Giúp</a></li>
-                <li className="mb-2"><a href="#!" className="text-white text-decoration-none">Chính Sách</a></li>
+                <li className="mb-1"><a href="#!" className="text-decoration-none" style={{ color: '#e0e0e09b' }}>Giới thiệu</a></li>
+                <li className="mb-1"><a href="#!" className="text-decoration-none" style={{ color: '#e0e0e09b' }}>Trợ Giúp</a></li>
+                <li className="mb-1"><a href="#!" className="text-decoration-none" style={{ color: '#e0e0e09b' }}>Chính Sách</a></li>
               </ul>
             </div>
             {/* Cột Thông tin */}
-            <div className="col-6 text-start">
-              <h5 className="text-uppercase fw-bold text-white mb-3">
+            <div className="col-4 text-start">
+              <span className="fw-bold text-white mb-2">
                 Thông tin
-              </h5>
+              </span>
               <ul className="list-unstyled">
-                <li className="mb-2"><a href="#!" className="text-white text-decoration-none">Trang chủ</a></li>
-                <li className="mb-2"><a href="#!" className="text-white text-decoration-none">Liên Hệ</a></li>
-                <li className="mb-2"><a href="#!" className="text-white text-decoration-none">Điểm Số</a></li>
+                <li className="mb-1"><a href="#!" className="text-decoration-none" style={{ color: '#e0e0e09b' }}>Trang chủ</a></li>
+                <li className="mb-1"><a href="#!" className="text-decoration-none" style={{ color: '#e0e0e09b' }}>Liên Hệ</a></li>
+                <li className="mb-1"><a href="#!" className="text-decoration-none" style={{ color: '#e0e0e09b' }}>Điểm Số</a></li>
               </ul>
             </div>
           </div>
         </div>
-      </footer >
+      </footer>
     </div >
   );
 }
